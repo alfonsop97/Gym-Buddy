@@ -11,8 +11,6 @@
 		99C4FBC127041B7C00B25A49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBC027041B7C00B25A49 /* ContentView.swift */; };
 		99C4FBC327041B8600B25A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C4FBC227041B8600B25A49 /* Assets.xcassets */; };
 		99C4FBC627041B8600B25A49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C4FBC527041B8600B25A49 /* Preview Assets.xcassets */; };
-		99C4FBC827041B8600B25A49 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBC727041B8600B25A49 /* Persistence.swift */; };
-		99C4FBCB27041B8600B25A49 /* Gym_Buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBC927041B8600B25A49 /* Gym_Buddy.xcdatamodeld */; };
 		99C4FBD527041B8600B25A49 /* Gym_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBD427041B8600B25A49 /* Gym_BuddyTests.swift */; };
 		99C4FBDF27041B8600B25A49 /* Gym_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBDE27041B8600B25A49 /* Gym_BuddyUITests.swift */; };
 		99C4FBE127041B8600B25A49 /* Gym_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBE027041B8600B25A49 /* Gym_BuddyUITestsLaunchTests.swift */; };
@@ -41,8 +39,6 @@
 		99C4FBC027041B7C00B25A49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99C4FBC227041B8600B25A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C4FBC527041B8600B25A49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		99C4FBC727041B8600B25A49 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		99C4FBCA27041B8600B25A49 /* Gym_Buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gym_Buddy.xcdatamodel; sourceTree = "<group>"; };
 		99C4FBD027041B8600B25A49 /* Gym BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C4FBD427041B8600B25A49 /* Gym_BuddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_BuddyTests.swift; sourceTree = "<group>"; };
 		99C4FBDA27041B8600B25A49 /* Gym BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +97,6 @@
 				99C4FBBE27041B7C00B25A49 /* Gym_BuddyApp.swift */,
 				99C4FBC027041B7C00B25A49 /* ContentView.swift */,
 				99C4FBC227041B8600B25A49 /* Assets.xcassets */,
-				99C4FBC727041B8600B25A49 /* Persistence.swift */,
-				99C4FBC927041B8600B25A49 /* Gym_Buddy.xcdatamodeld */,
 				99C4FBC427041B8600B25A49 /* Preview Content */,
 			);
 			path = "Gym Buddy";
@@ -263,9 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99C4FBC827041B8600B25A49 /* Persistence.swift in Sources */,
 				99C4FBC127041B7C00B25A49 /* ContentView.swift in Sources */,
-				99C4FBCB27041B8600B25A49 /* Gym_Buddy.xcdatamodeld in Sources */,
 				99C4FBBF27041B7C00B25A49 /* Gym_BuddyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,19 +607,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		99C4FBC927041B8600B25A49 /* Gym_Buddy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				99C4FBCA27041B8600B25A49 /* Gym_Buddy.xcdatamodel */,
-			);
-			currentVersion = 99C4FBCA27041B8600B25A49 /* Gym_Buddy.xcdatamodel */;
-			path = Gym_Buddy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 99C4FBB327041B7C00B25A49 /* Project object */;
 }
