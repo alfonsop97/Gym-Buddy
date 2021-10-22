@@ -14,6 +14,12 @@
 		99C4FBD527041B8600B25A49 /* Gym_BuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBD427041B8600B25A49 /* Gym_BuddyTests.swift */; };
 		99C4FBDF27041B8600B25A49 /* Gym_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBDE27041B8600B25A49 /* Gym_BuddyUITests.swift */; };
 		99C4FBE127041B8600B25A49 /* Gym_BuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBE027041B8600B25A49 /* Gym_BuddyUITestsLaunchTests.swift */; };
+		99C4FBEE27041E3F00B25A49 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBED27041E3F00B25A49 /* MotherView.swift */; };
+		99C4FBF027041E6000B25A49 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBEF27041E6000B25A49 /* Router.swift */; };
+		99C4FBF227041E7A00B25A49 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBF127041E7A00B25A49 /* Helper.swift */; };
+		99C4FBF527041F9D00B25A49 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 99C4FBF427041F9D00B25A49 /* Realm */; };
+		99C4FBF727041F9D00B25A49 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 99C4FBF627041F9D00B25A49 /* RealmSwift */; };
+		99C4FBFA2704205B00B25A49 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FBF92704205B00B25A49 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,10 @@
 		99C4FBDA27041B8600B25A49 /* Gym BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C4FBDE27041B8600B25A49 /* Gym_BuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_BuddyUITests.swift; sourceTree = "<group>"; };
 		99C4FBE027041B8600B25A49 /* Gym_BuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_BuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99C4FBED27041E3F00B25A49 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		99C4FBEF27041E6000B25A49 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		99C4FBF127041E7A00B25A49 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		99C4FBF92704205B00B25A49 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C4FBF727041F9D00B25A49 /* RealmSwift in Frameworks */,
+				99C4FBF527041F9D00B25A49 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +106,12 @@
 		99C4FBBD27041B7C00B25A49 /* Gym Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				99C4FBF82704203A00B25A49 /* Views */,
 				99C4FBBE27041B7C00B25A49 /* Gym_BuddyApp.swift */,
-				99C4FBC027041B7C00B25A49 /* ContentView.swift */,
+				99C4FBEF27041E6000B25A49 /* Router.swift */,
 				99C4FBC227041B8600B25A49 /* Assets.xcassets */,
 				99C4FBC427041B8600B25A49 /* Preview Content */,
+				99C4FBF127041E7A00B25A49 /* Helper.swift */,
 			);
 			path = "Gym Buddy";
 			sourceTree = "<group>";
@@ -127,6 +141,16 @@
 			path = "Gym BuddyUITests";
 			sourceTree = "<group>";
 		};
+		99C4FBF82704203A00B25A49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99C4FBED27041E3F00B25A49 /* MotherView.swift */,
+				99C4FBC027041B7C00B25A49 /* ContentView.swift */,
+				99C4FBF92704205B00B25A49 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +167,10 @@
 			dependencies = (
 			);
 			name = "Gym Buddy";
+			packageProductDependencies = (
+				99C4FBF427041F9D00B25A49 /* Realm */,
+				99C4FBF627041F9D00B25A49 /* RealmSwift */,
+			);
 			productName = "Gym Buddy";
 			productReference = 99C4FBBB27041B7C00B25A49 /* Gym Buddy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 99C4FBB227041B7B00B25A49;
+			packageReferences = (
+				99C4FBF327041F9D00B25A49 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 99C4FBBC27041B7C00B25A49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C4FBFA2704205B00B25A49 /* LoginView.swift in Sources */,
+				99C4FBF027041E6000B25A49 /* Router.swift in Sources */,
 				99C4FBC127041B7C00B25A49 /* ContentView.swift in Sources */,
+				99C4FBF227041E7A00B25A49 /* Helper.swift in Sources */,
+				99C4FBEE27041E3F00B25A49 /* MotherView.swift in Sources */,
 				99C4FBBF27041B7C00B25A49 /* Gym_BuddyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +642,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99C4FBF327041F9D00B25A49 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99C4FBF427041F9D00B25A49 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99C4FBF327041F9D00B25A49 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		99C4FBF627041F9D00B25A49 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99C4FBF327041F9D00B25A49 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99C4FBB327041B7C00B25A49 /* Project object */;
 }
